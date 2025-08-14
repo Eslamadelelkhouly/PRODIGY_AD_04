@@ -28,7 +28,7 @@ class CustomGrid extends StatelessWidget {
                   return ContainerGrid(
                     onTap: () {
                       manager.check(index);
-                      if (manager.player1.length + manager.player2.length == 5)
+                      if (manager.player1.length + manager.player2.length >= 6)
                         manager.win();
                     },
                     kind: manager.board[index],

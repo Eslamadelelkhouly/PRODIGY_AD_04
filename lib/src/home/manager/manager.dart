@@ -46,7 +46,7 @@ class Manager with ChangeNotifier {
         (board[0] == 'x' && board[4] == 'x' && board[8] == 'x') ||
         (board[2] == 'x' && board[4] == 'x' && board[6] == 'x')) {
       win_player = 'x';
-    } else if ((player2[0] == 'o' && player2[1] == 'o' && player2[2] == 'o') ||
+    } else if ((board[0] == 'o' && board[1] == 'o' && board[2] == 'o') ||
         (board[3] == 'o' && board[4] == 'o' && board[5] == 'o') ||
         (board[6] == 'o' && board[7] == 'o' && board[8] == 'o') ||
         (board[0] == 'o' && board[3] == 'o' && board[6] == 'o') ||
